@@ -19,6 +19,19 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="Gradle: junit:junit:4.12" />
           <element id="library" level="project" name="Gradle: jstl:jstl:1.2" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-oxm:5.0.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:5.0.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-web:5.0.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-orm:5.0.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-jdbc:5.0.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-tx:5.0.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context-support:5.0.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context:5.0.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-aop:5.0.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-test:5.0.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-beans:5.0.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:5.0.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-core:5.0.2.RELEASE" />
           <element id="library" level="project" name="Gradle: net.sourceforge.jtds:jtds:1.3.1" />
           <element id="library" level="project" name="Gradle: ch.qos.logback:logback-classic:1.1.2" />
           <element id="library" level="project" name="Gradle: ch.qos.logback:logback-core:1.1.2" />
@@ -45,28 +58,15 @@
           <element id="library" level="project" name="Gradle: commons-codec:commons-codec:1.10" />
           <element id="library" level="project" name="Gradle: commons-configuration:commons-configuration:1.10" />
           <element id="library" level="project" name="Gradle: commons-lang:commons-lang:2.6" />
+          <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.1.1" />
           <element id="library" level="project" name="Gradle: com.google.zxing:core:2.1" />
           <element id="library" level="project" name="Gradle: com.google.code.gson:gson:2.3.1" />
           <element id="library" level="project" name="Gradle: org.hamcrest:hamcrest-core:1.3" />
           <element id="library" level="project" name="Gradle: redis.clients:jedis:2.9.0" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-jcl:5.0.2.RELEASE" />
           <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.6" />
           <element id="library" level="project" name="Gradle: commons-pool:commons-pool:1.5.4" />
           <element id="library" level="project" name="Gradle: org.apache.commons:commons-pool2:2.4.2" />
-          <element id="file-copy" path="$PROJECT_DIR$/../androidTool/gradle-4.3-rc-1/caches/modules-2/files-2.1/org.springframework/spring-oxm/5.0.2.RELEASE/21b48269cbd3db20c6413db7b9b350850ebd1ff5/spring-oxm-5.0.2.RELEASE.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../androidTool/gradle-4.3-rc-1/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.2.RELEASE/8dbe4a28cae3ffa222aeff6776a3928a88d66e6f/spring-webmvc-5.0.2.RELEASE.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../androidTool/gradle-4.3-rc-1/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.2.RELEASE/eea8edef792fb93c1c55cc61078ce14ffb3542df/spring-web-5.0.2.RELEASE.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../androidTool/gradle-4.3-rc-1/caches/modules-2/files-2.1/org.springframework/spring-orm/5.0.2.RELEASE/59f207a8426f6090734663afcd6d6003cca57ce8/spring-orm-5.0.2.RELEASE.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../androidTool/gradle-4.3-rc-1/caches/modules-2/files-2.1/org.springframework/spring-jdbc/5.0.2.RELEASE/5efc255d4073cfa639ecf8e92f162528519f9dd3/spring-jdbc-5.0.2.RELEASE.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../androidTool/gradle-4.3-rc-1/caches/modules-2/files-2.1/org.springframework/spring-tx/5.0.2.RELEASE/38ef30ad6e34b5004c8955685b6a7ea753717b7d/spring-tx-5.0.2.RELEASE.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../androidTool/gradle-4.3-rc-1/caches/modules-2/files-2.1/org.springframework/spring-context-support/5.0.2.RELEASE/f3dcba6050b1635aacc606243decc99515d1430/spring-context-support-5.0.2.RELEASE.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../androidTool/gradle-4.3-rc-1/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.2.RELEASE/743a5f6d94a8af5759e6e70c360a7b4a47a704c/spring-context-5.0.2.RELEASE.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../androidTool/gradle-4.3-rc-1/caches/modules-2/files-2.1/org.springframework/spring-aop/5.0.2.RELEASE/4d49aa2cff33be79da99413e28a905898600ccaa/spring-aop-5.0.2.RELEASE.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../androidTool/gradle-4.3-rc-1/caches/modules-2/files-2.1/org.springframework/spring-test/5.0.2.RELEASE/a6fdd26c9a21958134522a5232e9f23929985f9/spring-test-5.0.2.RELEASE.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../androidTool/gradle-4.3-rc-1/caches/modules-2/files-2.1/org.springframework/spring-beans/5.0.2.RELEASE/301ee07b390bc8b5691f4206411b49beb06f7ff2/spring-beans-5.0.2.RELEASE.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../androidTool/gradle-4.3-rc-1/caches/modules-2/files-2.1/org.springframework/spring-expression/5.0.2.RELEASE/246bf50b5b46379041d333b4a46a01a7aea0b788/spring-expression-5.0.2.RELEASE.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../androidTool/gradle-4.3-rc-1/caches/modules-2/files-2.1/org.springframework/spring-core/5.0.2.RELEASE/45b2958ab3fb022dd29f8b1c553ebf1c75a144aa/spring-core-5.0.2.RELEASE.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../androidTool/gradle-4.3-rc-1/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../androidTool/gradle-4.3-rc-1/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.0.2.RELEASE/212a0bdd54e026641cf527aeb8e578f86e402bf1/spring-jcl-5.0.2.RELEASE.jar" />
         </element>
       </element>
     </root>
