@@ -32,11 +32,11 @@ public class UserServiceImpl implements IUserService {
     }
 
     public ServerResponse<String> register(User user) {
-        ServerResponse validResponse = this.checkValid(user.getUsername(), Const.USERNAME);
+        ServerResponse<String> validResponse = this.checkValid(user.getUsername(), Const.USERNAME);
         if (!validResponse.isSuccess()) {
             return validResponse;
         }
-        this.checkValid(user.getEmail(), Const.EMAIL);
+        validResponse = this.checkValid(user.getEmail(), Const.EMAIL);
         if (!validResponse.isSuccess()) {
             return validResponse;
         }
@@ -49,7 +49,7 @@ public class UserServiceImpl implements IUserService {
         return ServerResponse.createBySuccessMessage("注册成功");
     }
 
-    private ServerResponse checkValid(String str, String type) {
+    private ServerResponse<String> checkValid(String str, String type) {
         if (StringUtils.isNotEmpty(type)) {
             if (Const.USERNAME.equals(type)) {
                 int resultCount = userMapper.checkUserName(str);

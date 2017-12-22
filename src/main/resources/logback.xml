@@ -10,11 +10,11 @@
         </filter>
     </appender>
 
-    <appender name="mmall" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <appender name="zack" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <!--<File>d:/mmalllog/mmall.log</File>-->
         <File>/developer/apache-tomcat-9.0.2/logs/mmall.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>/developer/apache-tomcat-9.0.2/logs/love.log.%d{yyyy-MM-dd}.gz</fileNamePattern>
+            <fileNamePattern>/developer/apache-tomcat-9.0.2/logs/zack.log.%d{yyyy-MM-dd}.gz</fileNamePattern>
             <append>true</append>
             <maxHistory>10</maxHistory>
         </rollingPolicy>
@@ -52,7 +52,7 @@
 
     <!-- geelynote mybatis log 日志 -->
 
-    <logger name="com.zack.dao" level="DEBUG"/>
+    <logger name="com.zack.mapper" level="DEBUG"/>
 
     <!--<logger name="com.ibatis.sqlmap.engine.impl.SqlMapClientDelegate" level="DEBUG" >-->
         <!--<appender-ref ref="console"/>-->

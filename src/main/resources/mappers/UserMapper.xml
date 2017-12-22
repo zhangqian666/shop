@@ -62,9 +62,9 @@
   </select>
 
     <select id="checkEmail" resultType="int" parameterType="java.lang.String">
-    SELECT count(1)
-    FROM USER
-    WHENEVER email = #{email}
+    select count(1)
+    from user
+    where email = #{email}
   </select>
     <select id="selectLogin" resultMap="BaseResultMap" parameterType="map">
     select id, username, password, email, phone, question, answer, role, create_time,
