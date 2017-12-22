@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.miemiedev:mybatis-paginator:1.2.17">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../androidTool/gradle-4.3-rc-1/caches/modules-2/files-2.1/com.github.miemiedev/mybatis-paginator/1.2.17/d1cf0b5019d82b6c42ff55e985ef479e9368e7d9/mybatis-paginator-1.2.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../androidTool/gradle-4.3-rc-1/caches/modules-2/files-2.1/com.github.miemiedev/mybatis-paginator/1.2.17/e8fb4399681a78a87a962ca0dc41e0c0dd9dd719/mybatis-paginator-1.2.17-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
