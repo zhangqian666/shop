@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpSession;
 
 @Controller
-@RequestMapping("user")
+@RequestMapping("/user/")
 public class UserController {
 
     @Autowired
@@ -62,22 +62,22 @@ public class UserController {
 
     @RequestMapping(value = "forget_get_question.do", method = RequestMethod.POST)
     @ResponseBody
-    public ServerResponse<String> forgetGetQuestion(String username) {
-        return iUserService.selectQuestion(username);
+    public ServerResponse<String> forgetGetQuestion(Integer uid) {
+        return iUserService.selectQuestion(uid);
     }
 
 
     @RequestMapping(value = "forget_check_answer.do", method = RequestMethod.POST)
     @ResponseBody
-    public ServerResponse<String> forgetCheckAnswer(String username, String question, String answer) {
-        return iUserService.checkAnswer(username, question, answer);
+    public ServerResponse<String> forgetCheckAnswer(Integer uid, String question, String answer) {
+        return iUserService.checkAnswer(uid, question, answer);
     }
 
 
     @RequestMapping(value = "forget_reset_password.do", method = RequestMethod.POST)
     @ResponseBody
-    public ServerResponse<String> forgetRestPassword(String username, String passwordNew, String forgetToken) {
-        return iUserService.forgetResetPassword(username, passwordNew, forgetToken);
+    public ServerResponse<String> forgetRestPassword(Integer uid, String passwordNew, String forgetToken) {
+        return iUserService.forgetResetPassword(uid, passwordNew, forgetToken);
     }
 
     @RequestMapping(value = "reset_password.do", method = RequestMethod.POST)

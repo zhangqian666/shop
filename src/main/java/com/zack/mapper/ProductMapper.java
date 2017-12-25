@@ -2,7 +2,9 @@ package com.zack.mapper;
 
 import com.zack.model.Product;
 import com.zack.model.ProductExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface ProductMapper {
@@ -117,4 +119,10 @@ public interface ProductMapper {
      * @mbggenerated
      */
     int updateByPrimaryKey(Product record);
+
+    List<Product> selectByNameAndCategoryIds(@Param("productName") String productName, @Param("categoryIdList") List<Integer> categoryIdList);
+
+    List<Product> selectList();
+
+    List<Product> selectByNameAndProductId(@Param("productName") String productName, @Param("productId") Integer productId);
 }

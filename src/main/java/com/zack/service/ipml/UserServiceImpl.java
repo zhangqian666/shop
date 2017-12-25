@@ -2,6 +2,7 @@ package com.zack.service.ipml;
 
 import com.zack.common.Const;
 import com.zack.common.ServerResponse;
+import com.zack.common.TokenCache;
 import com.zack.mapper.UserMapper;
 import com.zack.model.User;
 import com.zack.service.IUserService;
@@ -10,6 +11,8 @@ import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import sun.invoke.empty.Empty;
+
+import java.util.UUID;
 
 @Service("iUserService")
 public class UserServiceImpl implements IUserService {
@@ -96,23 +99,71 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public ServerResponse<String> selectQuestion(String username) {
-        ServerResponse<String> stringServerResponse = this.checkValid(username, Const.USERNAME);
-        if (stringServerResponse.isSuccess()) {
+    public ServerResponse<String> selectQuestion(Integer uid) {
+        User user = userMapper.selectByPrimaryKey(uid);
+        if (user == null) {
             return ServerResponse.createByErrorMessage("用户不存在");
         }
+        if (org.apache.commons.lang3.StringUtils.isNoneBlank(user.getQuestion())) {
+            return ServerResponse.createBySuccess(user.getQuestion());
+        }
 
-        return null;
+        return ServerResponse.createBySuccessMessage("找回密码的问题是空的");
     }
 
     @Override
-    public ServerResponse<String> checkAnswer(String username, String question, String answer) {
-        return null;
+    public ServerResponse<String> checkAnswer(Integer uid, String question, String answer) {
+        User user = userMapper.selectByPrimaryKey(uid);
+        if (user == null) {
+            return ServerResponse.createByErrorMessage("用户不存在");
+        }
+        int resultCount = userMapper.checkAnswer(uid, question, answer);
+        if (resultCount > 0) {
+            String forgetToken = UUID.randomUUID().toString();
+            TokenCache.setKey(TokenCache.TOKEN_PREFIX + uid, forgetToken);
+            return ServerResponse.createBySuccess(forgetToken);
+        }
+        return ServerResponse.createByErrorMessage("问题的答案错误");
     }
 
     @Override
-    public ServerResponse<String> forgetResetPassword(String username, String passwordNew, String forgetToken) {
-        return null;
+    public ServerResponse<String> forgetResetPassword(Integer uid, String passwordNew, String forgetToken) {
+        if (StringUtils.isBlank(forgetToken)) {
+            return ServerResponse.createByErrorMessage("参数错误，token需要传递");
+        }
+        User user = userMapper.selectByPrimaryKey(uid);
+        if (user == null) {
+            return ServerResponse.createByErrorMessage("用户不存在");
+        }
+        String token = TokenCache.getKey(TokenCache.TOKEN_PREFIX + uid);
+        if (StringUtils.isBlank(token)) {
+            return ServerResponse.createByErrorMessage("Token无效或者过期");
+        }
+        if (StringUtils.equals(forgetToken, token)) {
+            String md5EncodeUtf8 = MD5Util.MD5EncodeUtf8(passwordNew);
+            int resultCount = userMapper.updatePasswordByUid(uid, md5EncodeUtf8);
+            if (resultCount > 0) {
+                return ServerResponse.createBySuccessMessage("修改密码成功");
+            }
+        } else {
+            return ServerResponse.createByErrorMessage("Token错误，请重新获取重置密码的token");
+        }
+
+        return ServerResponse.createByErrorMessage("修改失败");
+    }
+
+    /**
+     * 检验是否是管理员
+     *
+     * @param user
+     * @return
+     */
+    @Override
+    public ServerResponse checkAdminRole(User user) {
+        if (user != null && user.getRole().intValue() == Const.Role.ROLE_ADMIN) {
+            return ServerResponse.createBySuccess();
+        }
+        return ServerResponse.createByError();
     }
 
     @Override

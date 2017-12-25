@@ -104,5 +104,9 @@ public interface UserMapper {
 
     int checkPassword(@Param("password") String password, @Param("userId") Integer userId);
 
-    int checkEmailByUserId(@Param(value="email")String email,@Param(value="userId")Integer userId);
+    int checkEmailByUserId(@Param(value = "email") String email, @Param(value = "userId") Integer userId);
+
+    int checkAnswer(@Param(value = "uid") Integer uid, @Param("question") String question, @Param("answer") String answer);
+
+    int updatePasswordByUid(@Param("uid") Integer uid, @Param("password") String md5EncodeUtf8);
 }

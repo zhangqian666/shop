@@ -93,4 +93,6 @@ public interface ProductCategoryMapper {
      * @mbggenerated
      */
     int updateByPrimaryKey(ProductCategory record);
+
+    List<ProductCategory> selectCategoryChildrenByParentId(Integer parentId);
 }
