@@ -17,6 +17,8 @@ import com.zack.utils.PropertiesUtil;
 import com.zack.vo.ProductDetailsVo;
 import com.zack.vo.ProductListVo;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,7 +27,7 @@ import java.util.List;
 
 @Service("iProductService")
 public class ProductServiceImpl implements IProductService {
-
+    final Logger logger = LoggerFactory.getLogger(ProductServiceImpl.class);
     @Autowired
     ProductMapper productMapper;
 
@@ -150,11 +152,11 @@ public class ProductServiceImpl implements IProductService {
         //startPage--start
         //填充自己的sql查询逻辑
         //pageHelper-收尾
-        PageHelper.startPage(pageNum,pageSize);
+        PageHelper.startPage(pageNum, pageSize);
         List<Product> productList = productMapper.selectList();
 
         List<ProductListVo> productListVoList = Lists.newArrayList();
-        for(Product productItem : productList){
+        for (Product productItem : productList) {
             ProductListVo productListVo = assembleProductListVo(productItem);
             productListVoList.add(productListVo);
         }
@@ -165,13 +167,13 @@ public class ProductServiceImpl implements IProductService {
 
     @Override
     public ServerResponse searchProduct(String productName, Integer productId, int pageNum, int pageSize) {
-        PageHelper.startPage(pageNum,pageSize);
-        if(StringUtils.isNotBlank(productName)){
+        PageHelper.startPage(pageNum, pageSize);
+        if (StringUtils.isNotBlank(productName)) {
             productName = new StringBuilder().append("%").append(productName).append("%").toString();
         }
-        List<Product> productList = productMapper.selectByNameAndProductId(productName,productId);
+        List<Product> productList = productMapper.selectByNameAndProductId(productName, productId);
         List<ProductListVo> productListVoList = Lists.newArrayList();
-        for(Product productItem : productList){
+        for (Product productItem : productList) {
             ProductListVo productListVo = assembleProductListVo(productItem);
             productListVoList.add(productListVo);
         }

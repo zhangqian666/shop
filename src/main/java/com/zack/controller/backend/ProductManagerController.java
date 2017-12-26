@@ -25,7 +25,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.Map;
 
-@RequestMapping("/manage/product")
+@RequestMapping("/manage/product/")
 @Controller
 public class ProductManagerController {
 
@@ -44,7 +44,6 @@ public class ProductManagerController {
         User user = (User) httpSession.getAttribute(Const.CURRENT_USER);
         if (user == null) {
             return ServerResponse.createByErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(), "用户未登录,请登录管理员");
-
         }
         if (iUserService.checkAdminRole(user).isSuccess()) {
             //填充我们增加产品的业务逻辑

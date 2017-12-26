@@ -93,4 +93,12 @@ public interface ProductOrderMapper {
      * @mbggenerated
      */
     int updateByPrimaryKey(ProductOrder record);
+
+    ProductOrder selectByUidAndOrderNo(@Param("uid") Integer uid, @Param("orderNo") Long orderNo);
+
+    List<ProductOrder> selectByUserId(Integer uid);
+
+    ProductOrder selectByOrderNo(Long orderNo);
+
+    List<ProductOrder> selectAllOrder();
 }
