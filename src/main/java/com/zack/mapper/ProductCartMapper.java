@@ -2,8 +2,11 @@ package com.zack.mapper;
 
 import com.zack.model.ProductCart;
 import com.zack.model.ProductCartExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
+import org.springframework.cglib.core.ProcessArrayCallback;
 
 public interface ProductCartMapper {
     /**
@@ -93,4 +96,18 @@ public interface ProductCartMapper {
      * @mbggenerated
      */
     int updateByPrimaryKey(ProductCart record);
+
+    ProductCart selectCartByUserIdAndProductId(@Param("uid") Integer uid, @Param("productId") Integer productId);
+
+    List<ProductCart> selectCartByUserId(Integer uid);
+
+    int selectCartProductCheckedStatusByUserId(Integer uid);
+
+    int deleteByUserIdProductIds(@Param("uid") Integer uid, @Param("productList") List<String> productList);
+
+    int checkedOrUncheckedProduct(@Param("uid") Integer uid, @Param("productId") Integer productId, @Param("checked") int checked);
+
+    int selectCartProductCount(Integer uid);
+
+    List<ProductCart> selectCheckedCartByUserId(Integer uid);
 }

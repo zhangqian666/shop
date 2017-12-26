@@ -6,29 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d62aeff4-3682-4aea-b66f-f69f3e23b871" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/controller/backend/CategoryManagerController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/controller/backend/ProductManagerController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/controller/backend/UserManagerController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/controller/portal/ProductController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ICategoryService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/service/IFileService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/service/IProductService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ipml/CategoryServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ipml/FileServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ipml/ProductServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/vo/ProductDetailsVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/vo/ProductListVo.java" />
+    <list default="true" id="d62aeff4-3682-4aea-b66f-f69f3e23b871" name="Default" comment="product user manageproduct/user category">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/controller/portal/CartController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ICartService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ipml/CartServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/vo/CartProductVo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/vo/CartVo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shop/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../shop/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shop/src/main/java/com/zack/controller/portal/UserController.java" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/controller/portal/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shop/src/main/java/com/zack/mapper/ProductCategoryMapper.java" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/mapper/ProductCategoryMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shop/src/main/java/com/zack/mapper/ProductMapper.java" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/mapper/ProductMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shop/src/main/java/com/zack/mapper/UserMapper.java" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/mapper/UserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shop/src/main/java/com/zack/service/IUserService.java" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/service/IUserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ipml/UserServiceImpl.java" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ipml/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shop/src/main/resources/mappers/ProductCategoryMapper.xml" afterPath="$PROJECT_DIR$/../shop/src/main/resources/mappers/ProductCategoryMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shop/src/main/resources/mappers/ProductMapper.xml" afterPath="$PROJECT_DIR$/../shop/src/main/resources/mappers/ProductMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shop/src/main/resources/mappers/UserMapper.xml" afterPath="$PROJECT_DIR$/../shop/src/main/resources/mappers/UserMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shop/src/main/java/com/zack/mapper/ProductCartMapper.java" afterPath="$PROJECT_DIR$/../shop/src/main/java/com/zack/mapper/ProductCartMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../shop/src/main/resources/mappers/ProductCartMapper.xml" afterPath="$PROJECT_DIR$/../shop/src/main/resources/mappers/ProductCartMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/../shop/out/" />
     <ignored path="$PROJECT_DIR$/../shop/.gradle/" />
@@ -98,51 +84,12 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CategoryServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ipml/CategoryServiceImpl.java">
+    <leaf>
+      <file leaf-file-name="CartController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../shop/src/main/java/com/zack/controller/portal/CartController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="88" column="9" lean-forward="true" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ipml/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ipml/ProductServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="102" column="58" lean-forward="false" selection-start-line="102" selection-start-column="58" selection-end-line="102" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getProductDetail#0;class#ProductServiceImpl#0" expanded="false" />
-                <element signature="method#getProductByKeywordCategory#0;class#ProductServiceImpl#0" expanded="false" />
-                <element signature="method#setSaleStatus#0;class#ProductServiceImpl#0" expanded="false" />
-                <element signature="method#assembleProductListVo#0;class#ProductServiceImpl#0" expanded="false" />
-                <element signature="method#assembleProductDetailVo#0;class#ProductServiceImpl#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ipml/FileServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+            <state relative-caret-position="496">
+              <caret line="53" column="40" lean-forward="true" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -561,7 +508,6 @@
         <option value="$PROJECT_DIR$/../shop/src/main/java/com/zack/controller/portal/UserController.java" />
         <option value="$PROJECT_DIR$/../shop/src/main/java/com/zack/controller/backend/UserManagerController.java" />
         <option value="$PROJECT_DIR$/../shop/src/main/java/com/zack/service/IUserService.java" />
-        <option value="$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ipml/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ICategoryService.java" />
         <option value="$PROJECT_DIR$/../shop/src/main/java/com/zack/controller/backend/CategoryManagerController.java" />
         <option value="$PROJECT_DIR$/../shop/src/main/java/com/zack/service/IProductService.java" />
@@ -573,6 +519,14 @@
         <option value="$PROJECT_DIR$/../shop/src/main/java/com/zack/controller/backend/ProductManagerController.java" />
         <option value="$PROJECT_DIR$/../shop/src/main/resources/mappers/ProductMapper.xml" />
         <option value="$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ipml/ProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ipml/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ipml/CartServiceIpml.java" />
+        <option value="$PROJECT_DIR$/../shop/src/main/java/com/zack/vo/CartVo.java" />
+        <option value="$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ICartService.java" />
+        <option value="$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ipml/CartServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../shop/src/main/java/com/zack/mapper/ProductCartMapper.java" />
+        <option value="$PROJECT_DIR$/../shop/src/main/java/com/zack/controller/portal/CartController.java" />
+        <option value="$PROJECT_DIR$/../shop/src/main/resources/mappers/ProductCartMapper.xml" />
       </list>
     </option>
   </component>
@@ -761,7 +715,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -800,6 +755,77 @@
               <item name="shop" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zack" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zack" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zack" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zack" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="ipml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zack" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zack" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -823,8 +849,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -841,11 +866,11 @@
       <recent name="com.zack.vo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\shop\src\main\java\com\zack\vo" />
       <recent name="D:\shop\src\main\java\com\zack" />
       <recent name="D:\shop\src\main\lib" />
       <recent name="D:\shop\src\main\resources\mybatis" />
       <recent name="D:\shop\src\main\resources" />
-      <recent name="D:\shop\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1055,7 +1080,8 @@
       <updated>1513927143434</updated>
       <workItem from="1513927145185" duration="11268000" />
       <workItem from="1514094478473" duration="13367000" />
-      <workItem from="1514168396673" duration="25231000" />
+      <workItem from="1514168396673" duration="30772000" />
+      <workItem from="1514254179144" duration="44000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1513933579545</created>
@@ -1085,11 +1111,18 @@
       <option name="project" value="LOCAL" />
       <updated>1514109557088</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="product user manageproduct/user category">
+      <created>1514199640752</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1514199640752</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49866000" />
+    <option name="totallyTimeSpent" value="55451000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1115,16 +1148,15 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.4974293" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45757997" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32823366" sideWeight="0.49614397" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7552156" sideWeight="0.49614397" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36856747" sideWeight="0.49614397" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5396384" sideWeight="0.4974293" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32823366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32823366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27120823" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27506426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19987147" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1133,12 +1165,39 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45757997" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1151,7 +1210,8 @@
     <MESSAGE value="sencond" />
     <MESSAGE value="login logout resetpassword" />
     <MESSAGE value="new" />
-    <option name="LAST_COMMIT_MESSAGE" value="new" />
+    <MESSAGE value="product user manageproduct/user category" />
+    <option name="LAST_COMMIT_MESSAGE" value="product user manageproduct/user category" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1164,51 +1224,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../shop/src/main/java/com/zack/utils/DateTimeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../shop/src/main/java/com/zack/common/TokenCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../androidTool/gradle-4.3-rc-1/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.3/7745e73e5a4b6d006fc3e184b6c777610b666f2f/jackson-annotations-2.9.3-sources.jar!/com/fasterxml/jackson/annotation/JsonInclude.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="51" column="18" lean-forward="false" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../androidTool/gradle-4.3-rc-1/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.2.RELEASE/8dbe4a28cae3ffa222aeff6776a3928a88d66e6f/spring-webmvc-5.0.2.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="108" column="84" lean-forward="false" selection-start-line="108" selection-start-column="84" selection-end-line="108" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../shop/src/main/resources/applicationContext-datasource.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="61" column="66" lean-forward="false" selection-start-line="61" selection-start-column="66" selection-end-line="61" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../shop/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../shop/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1245,13 +1260,6 @@
         <state relative-caret-position="433">
           <caret line="47" column="32" lean-forward="false" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="32" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../shop/src/main/java/com/zack/mapper/ProductCartMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-107">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1345,7 +1353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1353,7 +1360,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="110" column="8" lean-forward="false" selection-start-line="110" selection-start-column="8" selection-end-line="110" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1465,10 +1471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="96" column="29" lean-forward="false" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
-          <folding>
-            <element signature="e#2641#2642#0" expanded="false" />
-            <element signature="e#2670#2671#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1484,23 +1486,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="94" column="51" lean-forward="true" selection-start-line="94" selection-start-column="51" selection-end-line="94" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../shop/src/main/java/com/zack/controller/backend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop/src/main/java/com/zack/controller/backend.java" />
     <entry file="file://$PROJECT_DIR$/../shop/src/main/java/com/zack/common/ResponseCode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1546,9 +1539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="28" column="67" lean-forward="true" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1556,7 +1546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="126" column="34" lean-forward="true" selection-start-line="126" selection-start-column="34" selection-end-line="126" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1616,9 +1605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
           <caret line="71" column="17" lean-forward="true" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1626,7 +1612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="28" column="23" lean-forward="false" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1663,9 +1648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
           <caret line="59" column="68" lean-forward="true" selection-start-line="59" selection-start-column="68" selection-end-line="59" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1694,6 +1676,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ipml/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="161" column="52" lean-forward="true" selection-start-line="161" selection-start-column="52" selection-end-line="161" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ipml/CategoryServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -1704,11 +1694,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ipml/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/../shop/src/main/java/com/zack/vo/CartProductVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="364">
+          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop/src/main/java/com/zack/vo/CartVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop/src/main/resources/mappers/ProductCartMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="304" column="13" lean-forward="true" selection-start-line="304" selection-start-column="13" selection-end-line="304" selection-end-column="13" />
+          <folding>
+            <marker date="1514205077645" expanded="true" signature="5506:5624" ph="select from product_cart" />
+            <marker date="1514205077645" expanded="true" signature="5864:5930" ph="delete from " />
+            <marker date="1514205077645" expanded="true" signature="6183:6207" ph="delete from " />
+            <marker date="1514205077645" expanded="true" signature="9016:9049" ph="select count... product_cart" />
+            <marker date="1514205077645" expanded="true" signature="10679:11093" ph="update produ... " />
+            <marker date="1514205077645" expanded="true" signature="11466:12266" ph="update produ... " />
+            <marker date="1514205077645" expanded="true" signature="12515:12885" ph="update produ... " />
+            <marker date="1514205077645" expanded="true" signature="13019:13164" ph="SELECT FROM product_cart" />
+            <marker date="1514205077645" expanded="true" signature="13270:13377" ph="SELECT FROM product_cart" />
+            <marker date="1514205077645" expanded="true" signature="13508:13580" ph="SELECT count... product_cart" />
+            <marker date="1514205077645" expanded="true" signature="13694:13776" ph="SELECT NULLI... " />
+            <marker date="1514205077645" expanded="true" signature="13891:14014" ph="SELECT FROM product_cart" />
+            <marker date="1514205077645" expanded="true" signature="13891:14021" ph="SELECT FROM product_cart" />
+            <marker date="1514205077645" expanded="true" signature="14109:14164" ph="DELETE FROM " />
+            <marker date="1514205077645" expanded="true" signature="14490:14601" ph="UPDATE produ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop/src/main/java/com/zack/mapper/ProductCartMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="99" column="28" lean-forward="false" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ipml/CartServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="65" column="64" lean-forward="true" selection-start-line="65" selection-start-column="64" selection-end-line="65" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop/src/main/java/com/zack/service/ICartService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../shop/src/main/java/com/zack/controller/portal/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="53" column="40" lean-forward="true" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
