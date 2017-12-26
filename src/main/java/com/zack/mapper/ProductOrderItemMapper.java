@@ -2,7 +2,9 @@ package com.zack.mapper;
 
 import com.zack.model.ProductOrderItem;
 import com.zack.model.ProductOrderItemExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface ProductOrderItemMapper {
@@ -93,4 +95,10 @@ public interface ProductOrderItemMapper {
      * @mbggenerated
      */
     int updateByPrimaryKey(ProductOrderItem record);
+
+    void batchInsert(@Param("orderItemList") List<ProductOrderItem> orderItemList);
+
+    List<ProductOrderItem> getByOrderNoAndUid(@Param("uid") Integer uid, @Param("orderNo") Long orderNo);
+
+    List<ProductOrderItem> getByOrderNo(Long orderNo);
 }
