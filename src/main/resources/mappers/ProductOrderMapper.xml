@@ -43,7 +43,8 @@
                 </when>
                 <when test="criterion.listValue" >
                   and ${criterion.condition}
-                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                                    <foreach collection="criterion.value" item="listItem" open="(" close=")"
+                                             separator=",">
                     #{listItem}
                   </foreach>
                 </when>
@@ -76,7 +77,8 @@
                 </when>
                 <when test="criterion.listValue" >
                   and ${criterion.condition}
-                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                                    <foreach collection="criterion.value" item="listItem" open="(" close=")"
+                                             separator=",">
                     #{listItem}
                   </foreach>
                 </when>
@@ -262,6 +264,7 @@
       <include refid="Example_Where_Clause" />
     </if>
   </select>
+
   <update id="updateByExampleSelective" parameterType="map" >
     <!--
       WARNING - @mbggenerated
@@ -410,4 +413,35 @@
       update_time = #{updateTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+
+    <select id="selectByUidAndOrderNo" resultMap="BaseResultMap" parameterType="map">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM product_order
+        WHERE order_no = #{orderNo}
+        and user_id = #{uid}
+    </select>
+    <select id="selectByUserId" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM product_order
+        WHERE user_id = #{uid}
+        order by create_time desc
+
+    </select>
+
+    <select id="selectByOrderNo" resultMap="BaseResultMap" parameterType="long">
+        SELECT
+        <include refid="Base_Column_List">
+        </include>
+        FROM  product_order
+        where order_no = #{orderNo}
+    </select>
+  <select id="selectAllOrder" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List"/>
+    FROM product_order
+    ORDER BY create_time desc
+  </select>
 </mapper>

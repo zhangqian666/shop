@@ -184,6 +184,8 @@ public class OrderServiceImpl implements IOrderService {
                 productOrder.setSendTime(new Date());
                 orderMapper.updateByPrimaryKeySelective(productOrder);
                 return ServerResponse.createBySuccessMessage("发货成功");
+            } else {
+                return ServerResponse.createByErrorMessage("订单未支付");
             }
         }
         return ServerResponse.createByErrorMessage("订单不存在");

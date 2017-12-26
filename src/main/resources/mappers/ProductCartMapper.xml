@@ -144,10 +144,10 @@
             SELECT LAST_INSERT_ID()
         </selectKey>
         insert into product_cart (user_id, product_id, quantity,
-        checked, create_time, update_time
+        checked,create_time,update_time
         )
         values (#{userId,jdbcType=INTEGER}, #{productId,jdbcType=INTEGER}, #{quantity,jdbcType=INTEGER},
-        #{checked,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}
+        #{checked,jdbcType=INTEGER}, now(), now()
         )
     </insert>
     <insert id="insertSelective" parameterType="com.zack.model.ProductCart">
@@ -237,7 +237,7 @@
                 create_time = #{record.createTime,jdbcType=TIMESTAMP},
             </if>
             <if test="record.updateTime != null">
-                update_time = #{record.updateTime,jdbcType=TIMESTAMP},
+                update_time = now(),
             </if>
         </set>
         <if test="_parameter != null">
@@ -284,7 +284,7 @@
                 create_time = #{createTime,jdbcType=TIMESTAMP},
             </if>
             <if test="updateTime != null">
-                update_time = #{updateTime,jdbcType=TIMESTAMP},
+                update_time = now(),
             </if>
         </set>
         where id = #{id,jdbcType=INTEGER}
@@ -305,7 +305,7 @@
     </update>
 
 
-    <select id="selectCartByUserIdAndProductId" resultType="com.zack.model.ProductCart" parameterType="map">
+    <select id="selectCartByUserIdAndProductId" resultMap="BaseResultMap" parameterType="map">
         SELECT
         <include refid="Base_Column_List"/>
         FROM product_cart
