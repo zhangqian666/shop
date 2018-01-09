@@ -50,7 +50,6 @@ public class FTPUtil {
                     fis = new FileInputStream(fileItem);
                     ftpClient.storeFile(fileItem.getName(),fis);
                 }
-
             } catch (IOException e) {
                 logger.error("上传文件异常",e);
                 uploaded = false;
@@ -77,16 +76,6 @@ public class FTPUtil {
         }
         return isSuccess;
     }
-
-
-
-
-
-
-
-
-
-
 
     private String ip;
     private int port;

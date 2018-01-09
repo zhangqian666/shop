@@ -75,5 +75,7 @@
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.6" level="project" />
     <orderEntry type="library" name="Gradle: commons-pool:commons-pool:1.5.4" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.commons:commons-pool2:2.4.2" level="project" />
+    <orderEntry type="library" name="alipay-sdk-java20161213173952" level="project" />
+    <orderEntry type="library" name="alipay-sdk-java20180104135026" level="project" />
   </component>
 </module>
