@@ -6,6 +6,7 @@ import com.zack.common.ServerResponse;
 import com.zack.mapper.ProductCategoryMapper;
 import com.zack.model.ProductCategory;
 import com.zack.service.ICategoryService;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -19,9 +20,9 @@ import java.util.List;
 import java.util.Set;
 
 @Service("iCategoryService")
+@Slf4j
 public class CategoryServiceImpl implements ICategoryService {
 
-    private Logger logger = LoggerFactory.getLogger(CategoryServiceImpl.class);
     @Autowired
     private ProductCategoryMapper productCategoryMapper;
 
@@ -61,7 +62,7 @@ public class CategoryServiceImpl implements ICategoryService {
     public ServerResponse<List<ProductCategory>> getChildrenParallelCategory(Integer categoryId) {
         List<ProductCategory> categoryList = productCategoryMapper.selectCategoryChildrenByParentId(categoryId);
         if (CollectionUtils.isEmpty(categoryList)) {
-            logger.info("未找到当前分类的子分类");
+            log.info("未找到当前分类的子分类");
         }
         return ServerResponse.createBySuccess(categoryList);
     }

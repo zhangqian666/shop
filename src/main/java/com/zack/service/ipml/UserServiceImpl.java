@@ -7,6 +7,7 @@ import com.zack.mapper.UserMapper;
 import com.zack.model.User;
 import com.zack.service.IUserService;
 import com.zack.utils.MD5Util;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Service;
 import java.util.UUID;
 
 @Service("iUserService")
+@Slf4j
 public class UserServiceImpl implements IUserService {
 
     @Autowired

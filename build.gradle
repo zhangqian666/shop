@@ -153,4 +153,6 @@ dependencies {
     //include in compile only, exclude in the war
     providedCompile 'javax.servlet:servlet-api:2.5'
 
+    //lombok
+    compile 'org.projectlombok:lombok:1.16.20'
 }

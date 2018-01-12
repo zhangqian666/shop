@@ -1,5 +1,7 @@
 package com.zack.vo;
 
+import lombok.Data;
+
 import java.math.BigDecimal;
 
 /**

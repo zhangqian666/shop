@@ -7,6 +7,7 @@ import com.zack.common.ServerResponse;
 import com.zack.mapper.ShippingMapper;
 import com.zack.model.Shipping;
 import com.zack.service.IShippingService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service("iShippingService")
+@Slf4j
 public class ShippingServiceImpl implements IShippingService {
 
     @Autowired

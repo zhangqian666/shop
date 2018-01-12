@@ -14,6 +14,7 @@ import com.zack.utils.BigDecimalUtil;
 import com.zack.utils.PropertiesUtil;
 import com.zack.vo.CartProductVo;
 import com.zack.vo.CartVo;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,6 +23,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 @Service("iCartService")
+@Slf4j
 public class CartServiceImpl implements ICartService {
 
 

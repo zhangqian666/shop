@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@Service
+@Service("iPayService")
 public class PayServerImpl implements IPayService {
 
     @Autowired
@@ -61,8 +61,8 @@ public class PayServerImpl implements IPayService {
         AlipayTradeAppPayRequest request = new AlipayTradeAppPayRequest();
         //SDK已经封装掉了公共参数，这里只需要传入业务参数。以下方法为sdk的model入参方式(model和biz_content同时存在的情况下取biz_content)。
         AlipayTradeAppPayModel model = new AlipayTradeAppPayModel();
-        model.setBody("订单号：" + productOrder.getOrderNo());
-        model.setSubject(orderMsg.toString());
+        model.setBody(orderMsg.toString());
+        model.setSubject("订单号：" + productOrder.getOrderNo());
         model.setOutTradeNo(productOrder.getOrderNo() + "");
         model.setTimeoutExpress("30m");
         model.setTotalAmount(productOrder.getPayment().toString());

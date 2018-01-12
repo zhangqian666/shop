@@ -15,6 +15,7 @@ import com.zack.vo.OrderItemVo;
 import com.zack.vo.OrderProductVo;
 import com.zack.vo.OrderVo;
 import com.zack.vo.ShippingVo;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections.CollectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,8 +29,9 @@ import java.util.List;
 import java.util.Random;
 
 @Service("iOrderService")
+@Slf4j
 public class OrderServiceImpl implements IOrderService {
-    final private Logger logger = LoggerFactory.getLogger(OrderServiceImpl.class);
+
     @Autowired
     private ProductOrderMapper orderMapper;
     @Autowired
